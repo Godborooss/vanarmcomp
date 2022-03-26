@@ -1,5 +1,11 @@
 @extends('layouts.app')
 
+<head>
+    <title>reset</title>
+    <meta charset="utf-8">
+    <meta name="reset" content="reset page,auth">
+</head>
+
 @section('content')
 <div class="container">
     <div class="row justify-content-center">

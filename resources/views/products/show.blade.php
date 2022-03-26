@@ -1,5 +1,12 @@
 @extends('products.layout')
 
+<head>
+    <title>
+        showp
+    </title>
+    <meta charset="utf-8">
+    <meta name="show" content="page where admin can show products">
+</head>
 @section('content')
     <div class="row">
         <div class="col-lg-12 margin-tb">
@@ -21,8 +28,8 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Details:</strong>
-                {{ $product->detail }}
+                <strong>Link:</strong>
+                {{ $product->link }}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">

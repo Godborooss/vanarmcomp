@@ -1,5 +1,11 @@
 @extends('layouts.app')
 
+<head><meta charset="utf-8">
+    <title>
+        login
+    </title><meta name="login" content="login page,auth">
+</head>
+
 @section('content')
 <div class="container">
     <div class="row justify-content-center">

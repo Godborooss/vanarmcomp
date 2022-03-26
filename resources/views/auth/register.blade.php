@@ -1,5 +1,11 @@
 @extends('layouts.app')
 
+<head><meta name="register" content="register page,auth">
+    <title>
+        register
+    </title><meta charset="utf-8">
+</head>
+
 @section('content')
 <div class="container">
     <div class="row justify-content-center">

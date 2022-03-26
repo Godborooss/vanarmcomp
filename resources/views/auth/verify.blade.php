@@ -1,5 +1,13 @@
 @extends('layouts.app')
 
+<head>
+    <title >
+        verify
+    </title>
+    <meta charset="utf-8">
+    <meta name="verify" content="verify page auth">
+</head>
+
 @section('content')
 <div class="container">
     <div class="row justify-content-center">

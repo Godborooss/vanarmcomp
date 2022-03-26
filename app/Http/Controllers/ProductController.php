@@ -5,6 +5,10 @@ namespace App\Http\Controllers;
 use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\DB;
+
+
+
 class ProductController extends Controller
 {
     /**
@@ -14,8 +18,8 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $products = Product::latest()->paginate(5);
 
+        $products = Product::paginate(5);
         return view('products.index',compact('products'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
@@ -39,8 +43,8 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         $request->validate([
+            'link' => 'required',
             'name' => 'required',
-            'detail' => 'required',
             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
 
@@ -91,8 +95,8 @@ class ProductController extends Controller
     public function update(Request $request, Product $product)
     {
         $request->validate([
-            'name' => 'required',
-            'detail' => 'required'
+            'link' => 'required',
+            'name' => 'required'
         ]);
 
         $input = $request->all();

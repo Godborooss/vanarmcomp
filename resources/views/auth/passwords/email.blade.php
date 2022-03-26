@@ -1,5 +1,11 @@
 @extends('layouts.app')
 
+<head>
+    <meta name="email" content="email recovery page,auth">
+    <meta charset="utf-8">
+    <title>email</title>
+</head>
+
 @section('content')
 <div class="container">
     <div class="row justify-content-center">

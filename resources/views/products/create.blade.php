@@ -1,5 +1,11 @@
 @extends('products.layout')
 
+<head>
+    <title>
+        createp
+    </title>
+</head><meta name="create" content="product create page"><meta charset="utf-8">
+
 @section('content')
     <div class="row">
         <div class="col-lg-12 margin-tb">
@@ -35,8 +41,8 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Detail:</strong>
-                    <textarea class="form-control" style="height:150px" name="detail" placeholder="Detail"></textarea>
+                    <strong>Link:</strong>
+                    <input type="text" name="link" class="form-control" placeholder="Link">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">

@@ -1,4 +1,13 @@
 @extends('layouts.app')
+<head>
+    <meta charset="utf-8">
+
+    <meta name="confirm" content="login pass confirm page,authx">
+    <title>confirm</title>
+</head>
+<head>
+    <title></title>
+</head>
 
 @section('content')
 <div class="container">
